@@ -126,15 +126,27 @@
         <h2 style={{ fontSize: '40px', textAlign: 'center', marginBottom: '20px' }}>Sunlink Learn</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
           <div style={{ background: 'white', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
-            <iframe width="100%" height="220" src="https://www.youtube.com/embed/tn0veQ7_stI" style={{ border: 0 }} allowFullScreen></iframe>
-            <div style={{ padding: '20px' }}><h3>How to Price Your Products</h3></div>
-          </div>
-          <div style={{ background: 'white', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 6px rgba(0,0,0,0.1)' }}>
-            <iframe width="100%" height="220" src="https://www.youtube.com/embed/VJQJPi8ScJY" style={{ border: 0 }} allowFullScreen></iframe>
-            <div style={{ padding: '20px' }}><h3>WhatsApp Business Tutorial</h3></div>
-          </div>
-        </div>
-      </section>
+            {/* VIDEO 1: PRICING */}
+<iframe 
+  width="100%" 
+  height="220" 
+  src="https://www.youtube-nocookie.com/embed/tn0veQ7_stI" 
+  title="Pricing Strategy" 
+  style={{ border: 0 }} 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowFullScreen>
+</iframe>
+
+{/* VIDEO 2: WHATSAPP */}
+<iframe 
+  width="100%" 
+  height="220" 
+  src="https://www.youtube-nocookie.com/embed/VJQJPi8ScJY" 
+  title="WhatsApp Business" 
+  style={{ border: 0 }} 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowFullScreen>
+</iframe>
 
       {/* CTA */}
       <section style={{ padding: '120px 20px', textAlign: 'center', background: '#0ea5e9', color: 'white' }}>
