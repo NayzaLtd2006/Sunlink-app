@@ -1,4 +1,12 @@
 export default function App() {
+  const heroTextStyle = {
+    position: "absolute" as const,
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: "90%"
+  };
+
   return (
     <div style={{ fontFamily: "system-ui", color: "#111" }}>
       
@@ -24,7 +32,18 @@ export default function App() {
           alt="Sun City"
           style={{ width: "100%", height: "550px", objectFit: "cover", filter: "brightness(0.5)" }}
         />
-        <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", width: "90%" }}>
+        <div style={heroTextStyle}>
           <h1 style={{ fontSize: "52px", margin: "0 0 10px" }}>Sunlink Hub x Sun City</h1>
           <p style={{ fontSize: "22px", margin: "0 0 10px", fontStyle: "italic" }}>Connecting Sun City, Empowering Local Economies</p>
-         
+          <p style={{ fontSize: "16px", marginBottom: "30px" }}>Available on Android and iPhone</p>
+          
+          <div style={{ display: "flex", justifyContent: "center", gap: "15px", flexWrap: "wrap", marginBottom: "20px" }}>
+            <a href="https://play.google.com" target="_blank" style={{ 
+              background: "black", color: "white", padding: "12px 24px", borderRadius: "8px", 
+              textDecoration: "none", fontWeight: "bold"
+            }}>
+              📱 Google Play
+            </a>
+            <a href="https://www.apple.com/app-store/" target="_blank" style={{ 
+              background: "black", color: "white", padding: "12px 24px", borderRadius: "8px", 
+              textDecoration: "
