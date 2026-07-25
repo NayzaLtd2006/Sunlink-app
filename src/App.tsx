@@ -1,29 +1,54 @@
 export default function App() {
-  const heroTextStyle = {position: "absolute" as const, top: "50%", left: "50%", transform: "translate(-50%, -50%)", width: "90%"};
-
   return (
-    <div style={{ fontFamily: "system-ui", color: "#111" }}>
+    <div>
       
-      {/* NAVBAR */}
-      <nav style={{display: "flex", justifyContent: "space-between", alignItems: "center", padding: "20px 40px", borderBottom: "1px solid #eee", position: "sticky", top: 0, background: "white", zIndex: 10}}>
-        <h2 style={{ margin: 0, color: "#0ea5e9", fontWeight: "bold" }}>SUNLINK HUB x SUN CITY</h2>
-        <div style={{ display: "flex", gap: "20px", alignItems: "center", flexWrap: "wrap" }}>
-          <a href="#marketplace">Marketplace</a>
-          <a href="#solar">Solar Shops</a>
-          <a href="#leaders">Hub Leaders</a>
-          <a href="#learn">Sunlink Learn</a>
-          <a href="#contact">Contact</a>
-        </div>
+      <nav style={{padding: "20px", borderBottom: "1px solid #eee", background: "white"}}>
+        <h2 style={{color: "#0ea5e9"}}>SUNLINK HUB x SUN CITY</h2>
+        <a href="#marketplace" style={{marginRight: "15px"}}>Marketplace</a>
+        <a href="#solar" style={{marginRight: "15px"}}>Solar Shops</a>
+        <a href="#leaders" style={{marginRight: "15px"}}>Hub Leaders</a>
+        <a href="#learn" style={{marginRight: "15px"}}>Sunlink Learn</a>
+        <a href="#contact">Contact</a>
       </nav>
 
-      {/* HERO */}
-      <section style={{ textAlign: "center", padding: "0", position: "relative", color: "white" }}>
-        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600" alt="Sun City" style={{ width: "100%", height: "550px", objectFit: "cover", filter: "brightness(0.5)" }}/>
-        <div style={heroTextStyle}>
-          <h1 style={{ fontSize: "52px", margin: "0 0 10px" }}>Sunlink Hub x Sun City</h1>
-          <p style={{ fontSize: "22px", margin: "0 0 10px", fontStyle: "italic" }}>Connecting Sun City, Empowering Local Economies</p>
-          <p style={{ fontSize: "16px", marginBottom: "30px" }}>Available on Android and iPhone</p>
-          
-          <div style={{ display: "flex", justifyContent: "center", gap: "15px", flexWrap: "wrap", marginBottom: "20px" }}>
-            <a href="https://play.google.com" target="_blank" style={{ background: "black", color: "white", padding: "12px 24px", borderRadius: "8px", textDecoration: "none", fontWeight: "bold" }}>📱 Google Play</a>
-            <a href="https://www.apple.com/app-store/" target="_blank" style={{ background: "black", color: "white", padding: "12px 24px", borderRadius: "8px", textDecoration: "none", fontWeight:
+      <section style={{textAlign: "center", padding: "60px 20px", background: "#f0f9ff"}}>
+        <h1>Sunlink Hub x Sun City</h1>
+        <p>Connecting Sun City, Empowering Local Economies</p>
+        <p>Call Us: 071 076 3217</p>
+        <a href="https://play.google.com" target="_blank" style={{margin: "10px", padding: "10px", background: "black", color: "white", textDecoration: "none"}}>Google Play</a>
+        <a href="https://www.apple.com/app-store/" target="_blank" style={{margin: "10px", padding: "10px", background: "black", color: "white", textDecoration: "none"}}>App Store</a>
+      </section>
+
+      <section style={{padding: "60px 20px", textAlign: "center", background: "#f0f9ff"}}>
+        <h2>Why Sunlink Hub?</h2>
+        <p><b>0% Listing Fees</b> - Free for 12 months</p>
+        <p><b>100% Verified SMEs</b> - By Hub Leaders</p>
+        <p><b>24/7 Solar Shops</b> - Open during load shedding</p>
+      </section>
+
+      <section id="marketplace" style={{padding: "60px 20px"}}>
+        <h2 style={{textAlign: "center"}}>Sunlink Marketplace</h2>
+        <div>
+          <div style={{border: "1px solid #ddd", padding: "20px", margin: "10px"}}>
+            <h3>Mogwase Bead and Craft</h3>
+            <p>Handmade beadwork and souvenirs</p>
+            <p>WhatsApp: 072 123 4567</p>
+            <p>Verified by: Thandi Mokoena</p>
+          </div>
+          <div style={{border: "1px solid #ddd", padding: "20px", margin: "10px"}}>
+            <h3>Tlhabane Cultural Tours</h3>
+            <p>Township tours and cultural experiences</p>
+            <p>Call: 082 987 6543</p>
+            <p>Verified by: Joseph Khumalo</p>
+          </div>
+          <div style={{border: "1px solid #ddd", padding: "20px", margin: "10px"}}>
+            <h3>Sun City Taxi and Shuttle</h3>
+            <p>Reliable transport 24/7</p>
+            <p>WhatsApp: 071 555 1234</p>
+            <p>Verified by: Sarah Lebone</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="solar" style={{padding: "60px 20px", background: "#fff7ed"}}>
+        <h2 style={{textAlign: "center"}}>Open During Load Shedding</h2>
