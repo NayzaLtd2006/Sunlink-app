@@ -29,19 +29,18 @@
         <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '90%' }}>
           <h1 style={{ fontSize: '52px', margin: '0 0 10px' }}>Sunlink Hub x Sun City</h1>
           <p style={{ fontSize: '22px', margin: '0 0 10px', fontStyle: 'italic' }}>Connecting Sun City, Empowering Local Economies</p>
-          <p style={{ fontSize: '16px', marginBottom: '30px' }}>Available on Android & iPhone</p>
+          <p style={{ fontSize: '16px', marginBottom: '30px' }}>Available on Android and iPhone</p>
           
-          {/* APP STORE BUTTONS */}
           <div style={{ display: 'flex', justifyContent: 'center', gap: '15px', flexWrap: 'wrap', marginBottom: '20px' }}>
             <a href="https://play.google.com" target="_blank" style={{ 
               background: 'black', color: 'white', padding: '12px 24px', borderRadius: '8px', 
-              textDecoration: 'none', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '8px'
+              textDecoration: 'none', fontWeight: 'bold'
             }}>
               📱 Get it on Google Play
             </a>
             <a href="https://www.apple.com/app-store/" target="_blank" style={{ 
               background: 'black', color: 'white', padding: '12px 24px', borderRadius: '8px', 
-              textDecoration: 'none', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '8px'
+              textDecoration: 'none', fontWeight: 'bold'
             }}>
               🍎 Download on App Store
             </a>
@@ -53,7 +52,9 @@
         </div>
       </section>
 
-      {/* MARKETPLACE WITH REAL BUSINESSES */}
+      {/* MARKETPLACE */}
       <section id="marketplace" style={{ padding: '100px 20px', maxWidth: '1200px', margin: '0 auto' }}>
         <h2 style={{ fontSize: '36px', textAlign: 'center', marginBottom: '10px' }}>Sunlink Marketplace</h2>
-        <p style={{ textAlign: 'center', fontSize: '18px', marginBottom: '50px', color: '#
+        <p style={{ textAlign: 'center', fontSize: '18px', marginBottom: '50px', color: '#666' }}>Verified local SMEs near Sun City. All businesses verified by Community Hub Leaders.</p>
+        
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap:
