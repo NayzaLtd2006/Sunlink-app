@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SunLink Hub | SLH - Sun City Hospitality</title>
+  <title>SunLink Hub | SLH - Sun City Hospitality & Marketplace</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
-    body { background: #0a0a0a; color: #fff; }
+    body { background: #0a0a0a; color: #fff; scroll-behavior: smooth; }
+    nav { background: #000; padding: 15px; position: sticky; top: 0; z-index: 100; border-bottom: 2px solid #FFD700; text-align: center; }
+    nav a { color: #FFD700; text-decoration: none; margin: 0 10px; font-weight: bold; font-size: 0.85rem; }
     
     header {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200') center/cover;
-      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200') center/cover;
+      height: 90vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -18,10 +20,8 @@
       text-align: center;
       padding: 20px;
     }
-    
     .logo { font-size: 3rem; font-weight: bold; color: #FFD700; margin-bottom: 10px; }
-    .tagline { font-size: 1.2rem; color: #fff; margin-bottom: 30px; }
-    
+    .tagline { font-size: 1.2rem; color: #fff; margin-bottom: 20px; }
     .btn {
       background: #FFD700;
       color: #000;
@@ -30,48 +30,240 @@
       text-decoration: none;
       font-weight: bold;
       font-size: 1.1rem;
+      margin: 10px;
+      display: inline-block;
       transition: 0.3s;
     }
     .btn:hover { background: #fff; transform: scale(1.05); }
     
-    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    .app-buttons { margin-top: 20px; }
+    .app-btn {
+      background: #1a1a1a;
+      border: 2px solid #FFD700;
+      color: #FFD700;
+      padding: 12px 25px;
+      border-radius: 10px;
+      text-decoration: none;
+      margin: 8px;
+      display: inline-block;
+      font-weight: bold;
+    }
+    .app-btn:hover { background: #FFD700; color: #000; }
     
-    .services {
+    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    h2 { text-align: center; font-size: 2.5rem; color: #FFD700; margin-bottom: 20px; }
+    
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
       margin-top: 40px;
     }
-    
     .card {
       background: #1a1a1a;
       padding: 30px;
       border-radius: 15px;
       border: 1px solid #FFD700;
-      text-align: center;
+      text-align: left;
+    }
+    .card h3 { color: #FFD700; margin-bottom: 15px; text-align: center; }
+    
+    .vendor-form {
+      background: #1a1a1a;
+      padding: 40px;
+      border-radius: 15px;
+      border: 2px solid #FFD700;
+      max-width: 600px;
+      margin: auto;
+    }
+    .vendor-form input, .vendor-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      background: #0a0a0a;
+      border: 1px solid #FFD700;
+      color: #fff;
+      border-radius: 8px;
     }
     
-    .card h3 { color: #FFD700; margin-bottom: 15px; }
+    .tnc {
+      background: #111;
+      padding: 30px;
+      border-radius: 15px;
+      border-left: 4px solid #FFD700;
+      line-height: 1.8;
+    }
     
     footer {
       background: #000;
       text-align: center;
-      padding: 30px 20px;
+      padding: 40px 20px;
       border-top: 2px solid #FFD700;
     }
+    .social a { color: #FFD700; margin: 0 10px; text-decoration: none; }
   </style>
 </head>
 <body>
 
-  <header>
-    <div class="logo">SUNLINK HUB</div>
-    <div class="tagline">SLH - Premium Hospitality & Experiences at Sun City</div>
-    <a href="#services" class="btn">Explore Our Services</a>
-  </header>
+<nav>
+  <a href="#">Home</a>
+  <a href="#services">Services</a>
+  <a href="#marketplace">Marketplace</a>
+  <a href="#learn">Learn</a>
+  <a href="#manual">Manual</a>
+  <a href="#register">Register</a>
+  <a href="#solar">Solar</a>
+  <a href="#tnc">T&C</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <section id="services">
-    <h2 style="text-align: center; font-size: 2.5rem; color: #FFD700; margin-bottom: 10px;">Our Services</h2>
-    <p style="text-align: center; color: #ccc; margin-bottom: 40px;">Luxury. Comfort. Sun City Experience.</p>
+<header>
+  <div class="logo">SUNLINK HUB</div>
+  <div class="tagline">SLH - Connecting Vendors, Guests & Sun City Hospitality</div>
+  <a href="#marketplace" class="btn">Visit Marketplace</a>
+  <a href="#register" class="btn">Register Your Business</a>
+  
+  <div class="app-buttons">
+    <p style="color: #ccc; margin-bottom: 10px;">Download the SLH App:</p>
+    <a href="#" class="app-btn">📱 Get it on Google Play</a>
+    <a href="#" class="app-btn">🍎 Download on App Store</a>
+  </div>
+</header>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card"><h3>🏨 Accommodation</h3><p>5-Star hotel bookings and luxury villa stays</p></div>
+    <div class="card"><h3>🎰 Entertainment</h3><p>Casino, shows, golf, water park access</p></div>
+    <div class="card"><h3>🚐 Transfers</h3><p>VIP airport transfers and private transport</p></div>
+    <div class="card"><h3>🍽️ Dining</h3><p>Restaurant bookings and catering services</p></div>
+  </div>
+</section>
+
+<section id="marketplace" style="background: #111;">
+  <h2>SLH Marketplace</h2>
+  <p style="text-align: center; color: #ccc; margin-bottom: 30px;">Support local vendors in Sun City area</p>
+  <div class="grid">
+    <div class="card"><h3>🎨 Crafts & Souvenirs</h3><p>Local artists, beadwork, clothing</p></div>
+    <div class="card"><h3>🥗 Food & Catering</h3><p>Home-cooked meals, events catering</p></div>
+    <div class="card"><h3>💆 Wellness</h3><p>Massage, spa, beauty services</p></div>
+    <div class="card"><h3>📸 Tours & Photos</h3><p>Safari tours, event photography</p></div>
+  </div>
+  <p style="text-align: center; margin-top: 30px;"><a href="#register" class="btn">List Your Business Here</a></p>
+</section>
+
+<section id="learn">
+  <h2>SunLink Learn</h2>
+  <p style="text-align: center; color: #ccc; margin-bottom: 30px;">Education & Growth for Vendors and Community</p>
+  <div class="grid">
+    <div class="card">
+      <h3>📈 Business Skills</h3>
+      <p>• Pricing strategies for tourism<br>• Customer service excellence<br>• Financial management basics<br>• Marketing your brand on SLH</p>
+    </div>
+    <div class="card">
+      <h3>🎓 Training Workshops</h3>
+      <p>• Product quality standards<br>• Health & safety compliance<br>• Digital literacy for vendors<br>• Hospitality training</p>
+    </div>
+    <div class="card">
+      <h3>💡 Growth Resources</h3>
+      <p>• Funding opportunities<br>• Supplier connections<br>• Legal compliance guide<br>• Success stories from SLH vendors</p>
+    </div>
+  </div>
+</section>
+
+<section id="manual" style="background: #111;">
+  <h2>How To Use SLH</h2>
+  <p style="text-align: center; color: #ccc; margin-bottom: 30px;">Step-by-step guides for Guests & Vendors</p>
+  <div class="grid">
+    <div class="card">
+      <h3>For Guests</h3>
+      <p>1. Browse Marketplace or Services<br>2. Click on vendor/service you want<br>3. Contact via phone or form<br>4. Book and enjoy Sun City<br>5. Leave a review</p>
+    </div>
+    <div class="card">
+      <h3>For Vendors</h3>
+      <p>1. Register your business below<br>2. Wait for Hub Leader approval<br>3. Add products/services to profile<br>4. Respond to guest inquiries<br>5. Track bookings via dashboard</p>
+    </div>
+  </div>
+</section>
+
+<section id="register">
+  <h2>Register Your Business</h2>
+  <p style="text-align: center; color: #ccc; margin-bottom: 30px;">Join the SLH Vendor Platform</p>
+  <div class="vendor-form">
+    <input type="text" placeholder="Business Name">
+    <input type="text" placeholder="Owner Name">
+    <input type="tel" placeholder="Phone Number">
+    <input type="text" placeholder="Service Type e.g. Catering, Crafts">
+    <textarea rows="4" placeholder="Business Description"></textarea>
+    <button class="btn" style="border: none; cursor: pointer; width: 100%;">Submit Registration</button>
+    <p style="text-align: center; font-size: 0.9rem; margin-top: 15px; color: #ccc;">Accountable: <b>SLH Hub Leader</b></p>
+  </div>
+</section>
+
+<section id="solar" style="background: #111;">
+  <h2>🏆 Hospitality Solar Shops</h2>
+  <p style="text-align: center; color: #ccc; margin-bottom: 30px;">Open 24/7 During Load Shedding</p>
+  <div class="grid">
+    <div class="card"><h3>SunLink Power Mart</h3><p>Solar batteries, lights, phone charging</p></div>
+    <div class="card"><h3>SLH Energy Store</h3><p>Generators, inverters, backup power</p></div>
+    <div class="card"><h3>Hospitality Solar Hub</h3><p>Full solar solutions for vendors & hotels</p></div>
+  </div>
+</section>
+
+<section id="tnc">
+  <h2>Terms & Conditions</h2>
+  <div class="tnc">
+    <h3 style="color: #FFD700; margin-bottom: 15px;">1. Vendor Agreement</h3>
+    <p>All vendors must be registered and approved by the SLH Hub Leader. Vendors are responsible for quality of service and accurate information.</p>
     
-    <div class="services">
-      
+    <h3 style="color: #FFD700; margin: 20px 0 15px 0;">2. Guest Bookings</h3>
+    <p>SLH acts as a connector only. All bookings and payments are between guest and vendor. SLH is not liable for disputes.</p>
+    
+    <h3 style="color: #FFD700; margin: 20px 0 15px 0;">3. Platform Use</h3>
+    <p>Users must not post false information, spam, or harmful content. SLH reserves the right to remove any listing.</p>
+    
+    <h3 style="color: #FFD700; margin: 20px 0 15px 0;">4. Privacy</h3>
+    <p>Personal information is used only for connecting guests and vendors. Data will not be sold to third parties.</p>
+    
+    <p style="margin-top: 20px; font-size: 0.9rem; color: #ccc;">Last updated: July 2026 | © SunLink Hub SLH</p>
+  </div>
+</section>
+
+<section id="contact" style="background: #111;">
+  <h2>Contact SLH</h2>
+  <div class="grid">
+    <div class="card" style="text-align: center;">
+      <h3>📞 Phone</h3>
+      <p>071 076 3217</p>
+    </div>
+    <div class="card" style="text-align: center;">
+      <h3>🌐 Website</h3>
+      <p>https://sunlink-hub-648e7b.netlify.app</p>
+    </div>
+    <div class="card" style="text-align: center;">
+      <h3>📱 Download App</h3>
+      <a href="#" style="color: #FFD700;">Google Play</a> <br>
+      <a href="#" style="color: #FFD700;">App Store</a>
+    </div>
+    <div class="card" style="text-align: center;">
+      <h3>👑 Hub Leader</h3>
+      <p>Accountable for all vendor operations and platform management</p>
+    </div>
+  </div>
+  
+  <div class="social" style="margin-top: 30px; text-align: center;">
+    <h3 style="color: #FFD700;">Follow Us</h3>
+    <a href="#">Facebook: @SunLinkHubSLH</a>
+    <a href="#">Instagram: @sunlinkhub_sa</a>
+    <a href="#">Twitter: @SunLinkHub</a>
+    <a href="#">TikTok: @sunlinkhub</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 SunLink Hub | SLH. All rights reserved.</p>
+  <p style="color: #FFD700; margin-top: 10px;">Download on Google Play & App Store</p>
+</footer>
+
+</body>
+</html>
